@@ -13,7 +13,6 @@ app-laptop
 app-misc
 app-mobilephone
 app-office
-app-pda
 app-portage
 app-shells
 app-text
@@ -79,7 +78,6 @@ net-wireless
 sci-biology
 sci-chemistry
 sci-electronics
-sci-geosciences
 sci-libs
 sci-mathematics
 sci-misc

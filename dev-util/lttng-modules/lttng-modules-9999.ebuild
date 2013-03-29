@@ -1,8 +1,8 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=5
 
 inherit git-2 linux-mod
 
@@ -15,6 +15,30 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
+MODULE_NAMES="
+	lttng-ring-buffer-client-discard(misc:)
+	lttng-ring-buffer-client-overwrite(misc:)
+	lttng-ring-buffer-metadata-client(misc:)
+	lttng-ring-buffer-client-mmap-discard(misc:)
+	lttng-ring-buffer-client-mmap-overwrite(misc:)
+	lttng-ring-buffer-metadata-mmap-client(misc:)
+	lttng-tracer(misc:)
+	lttng-statedump(misc:)
+	probes/lttng-probe-statedump(misc:)
+	probes/lttng-types(misc:)
+	probes/lttng-probe-timer(misc:)
+	probes/lttng-probe-sched(misc:)
+	probes/lttng-probe-signal(misc:)
+	probes/lttng-probe-lttng(misc:)
+	probes/lttng-probe-irq(misc:)
+	probes/lttng-kretprobes(misc:)
+	probes/lttng-probe-block(misc:)
+	probes/lttng-kprobes(misc:)
+	lib/lttng-lib-ring-buffer(misc:)
+"
+
+BUILD_TARGETS="default"
+
 CONFIG_CHECK="MODULES KALLSYMS HIGH_RES_TIMERS TRACEPOINTS
 	~HAVE_SYSCALL_TRACEPOINTS ~PERF_EVENTS ~EVENT_TRACING ~KPROBES KRETPROBES"
 
@@ -25,10 +49,7 @@ pkg_pretend() {
 	fi
 }
 
-src_compile() {
-	emake default
-}
-
 src_install() {
-	emake DESTDIR="${D}" INSTALL_MOD_PATH="${D}" modules_install
+	linux-mod_src_install
+	dodoc ChangeLog README TODO
 }

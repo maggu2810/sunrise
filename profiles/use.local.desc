@@ -4,10 +4,8 @@
 
 app-admin/blockhosts:logrotate - Enable logrotate file installation
 app-admin/blockhosts:logwatch - Install support files for logwatch
-app-admin/istatd:qnaptemp - Read temperature from procfs on qnap NAS products
 app-admin/reprepro:archive - Enable archive support using app-arch/libarchive
 app-admin/reprepro:gpgme - Enable gpgme support using app-crypt/gpgme
-app-admin/vlogger:dbi - Enable support for DBI
 app-cdr/furiusisomount:brasero - Enables support for burning images using app-cdr/brasero
 app-crypt/yapet:csv - Enable csv import utility
 app-crypt/yapet:pwgen - Enable build-in password generator
@@ -110,18 +108,16 @@ dev-tex/fontpro:myriadpro - Generate LaTeX support for the Myriad Pro font
 dev-util/eclim:cdt - Enables C/C++ development support
 dev-util/eresi:server - Build eresi server capability
 dev-util/icewing:grabber - Build the grabber plug-in
-dev-util/icewing:unicap - Build support for media-libs/unicap as a grabber method
 dev-util/lttng-tools:ust - Support LTTng-UST (Userspace Tracing)
 dev-util/mockpp:boost - Use boost.test instead of cxxtest as framework
 dev-util/mockpp:cppunit - Use cppunit instead of cxxtest as framework
 dev-util/valide:unique - 
-games-action/minetest:client - Minetest client
-games-action/minetest:server - Minetest server
 games-arcade/clonekeenplus:tremor - Use media-libs/tremor as audio decoder
 games-board/dreamchess:music - Install the music pack
 games-board/dreamchess:sound - Enable support for media-libs/sdl-mixer to get sound
 games-emulation/gr-lida:dosbox - Enable support for dosbox emulator
 games-emulation/gr-lida:scummvm - Enable support for scummvm emulator
+games-fps/assaultcube:server - Build server
 games-fps/chocolate-doom:server - Enable installation of server
 games-fps/gzdoom:fluidsynth - Enables Fluidsynth MIDI software synthesis
 games-fps/tremfusion:tty - Enables text based game client
@@ -140,6 +136,7 @@ games-fps/vavoom:allegro - Adds support for media-libs/allegro(media library)
 games-fps/vavoom:asm - Enable faster assembly-language code for rendering
 games-fps/vavoom:models - Install enhanced 3D models
 games-fps/vavoom:music - Install enhanced hi-quality music (in OGG format)
+games-fps/vavoom:server - Build server
 games-fps/vavoom:textures - Install enhanced hi-res textures
 games-fps/vavoom:tools - Enable compilation of mod-developing tools
 games-fps/vavoom-models:doom - Install Doom resources
@@ -177,23 +174,15 @@ media-fonts/openfontlibrary:handwriting - Install handwriting-like fonts
 media-fonts/openfontlibrary:monospaced - Install mono-spaced fonts
 media-fonts/openfontlibrary:sansserif - Install sans-serif fonts
 media-fonts/openfontlibrary:serif - Install serif fonts
-media-gfx/fim:postscript - Install a postscript wrapper script
-media-gfx/fim:screen - Add (experimental!) support for running under screen
 media-gfx/fyre:gnet - Add support for cluster rendering
 media-gfx/synfigstudio:fmod - Enables support for using mod files for audio support
-media-libs/unicap:libv4l - Use libv4l to communicate with v4l2 devices
 media-sound/arename:zsh-completion - enable zsh completion support
 media-sound/crip:normalize - Enable for being able to normalize ripped tracks
 media-sound/gnormalize:normalize - Enable the normalize front-end
-media-sound/om:dssi - Enables support for DSSI plugins
-media-sound/om:patch-loader - Installs a command line patch loading client
 media-sound/peapod:bittorrent - Enable support for the BitTorrent protocol
 media-sound/peapod:id3 - Support ID3 in the player
 media-sound/pithos:gnome - Use gnome-base/gnome-settings-daemon for binding media keys
 media-sound/scala-bin:midi - MIDI support
-media-sound/songbird-bin:faac - Add faac support
-media-sound/songbird-bin:faad - Add faad support
-media-sound/songbird-bin:ugly - Add ugly support
 media-tv/freetuxtv:nls - Enable native language support (using intltool)
 media-video/image2mpeg:devil - Enable image loading via DevIL
 media-video/periscope:nautilus - Integrate with nautilus file manager
@@ -261,7 +250,6 @@ sys-fs/ntfs3g-ar:extras - Enable extra ntfsprogs utilities.
 sys-fs/ntfs3g-ar:ntfsprogs - Include internal version of ntfsprogs. This will block sys-fs/ntfsprogs.
 sys-fs/ntfs3g-ar:udev - Install udev rule to make udisks use ntfs-3g instead of the kernel NTFS driver.
 sys-power/acpi-support:hibernate-script - Use sys-power/hibernate-script for sleep and hibernate actions
-www-misc/monitorix:evms - Add support for (root) filesystems on sys-fs/evms volumes
 x11-drivers/asus-switcheroo:byo - Enables usage of the byo-swicheroo module
 x11-libs/pdcurses:nextaw - Use neXtaw instead of Xaw
 x11-misc/trayfreq:autostart - adds a desktop file to /etc/xdg/autostart
